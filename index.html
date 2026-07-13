@@ -401,28 +401,42 @@
                 <p>Connect with Us: Let's Discuss Your <br> Digital Marketing Needs</p>
             </div>
         </div>
-        <div class="contact-container">
-            <div class="form">
-                <div>
-                    <div class="navigations">
-                        <label for="say_hi">Say Hi</label>
-                        <input type="radio" id="say_hi">
-                        <label for="quote">Get a Quote</label>
-                        <input type="radio" id="quote">
-                    </div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-                    <label for="email">Email*</label>
-                    <input type="email">
-                    <label for="message">Message</label>
-                    <textarea name="Message" id="message">Message</textarea>
-                    <button>Send Message</button>
-                </div>
+<div class="contact-container">
+    <div class="form">
+        <div class="form-content">
+
+            <div class="navigations">
+                <label class="radio-option">
+                    <input type="radio" name="contact" checked>
+                    <span></span>
+                    Say Hi
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" name="contact">
+                    <span></span>
+                    Get a Quote
+                </label>
             </div>
-            <div class="contact-img">
-                <img src="images/contact-img.svg" alt="">
-            </div>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name">
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="Email">
+
+            <label for="message">Message*</label>
+            <textarea id="message" placeholder="Message"></textarea>
+
+            <button>Send Message</button>
+
         </div>
+    </div>
+
+    <div class="contact-img">
+        <img src="images/contact-img.svg" alt="">
+    </div>
+</div>
     </section>
 </body>
 
