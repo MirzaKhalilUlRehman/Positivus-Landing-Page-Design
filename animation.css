@@ -16,6 +16,7 @@
     from {
         transform: scaleX(0);
     }
+
     to {
         transform: scaleX(1);
     }
@@ -75,3 +76,22 @@
 .card-animation:nth-child(6) {
     transition-delay: 0.6s;
 }
+
+.circle1,
+.circle2,
+.circle3 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: fillRing 3s ease-in-out infinite alternate;
+}
+
+@keyframes fillRing {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
